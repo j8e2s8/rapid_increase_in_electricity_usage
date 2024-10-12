@@ -1,1 +1,2 @@
-# rapid_increase_in_electricity_usage
+# 이 공간은 LS 빅데이터 스쿨 큰 프로젝트2 작업물을 올리는 공간입니다.
+# 제가 작업한 파일은 3조 입니다.
