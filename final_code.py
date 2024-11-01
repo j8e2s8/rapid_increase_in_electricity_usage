@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 import seaborn as sns
 from matplotlib import font_manager, rc
-import seaborn as sns
 from scipy import stats
 from sklearn.preprocessing import PowerTransformer, MinMaxScaler, StandardScaler, PolynomialFeatures
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -18,7 +18,6 @@ import lightgbm as lgb
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.callbacks import EarlyStopping
-from sklearn.preprocessing import MinMaxScaler
 import tensorflow as tf
 from sklearn.ensemble import RandomForestClassifier
 from catboost import CatBoostClassifier
@@ -29,7 +28,7 @@ from catboost import CatBoostClassifier
 # 데이터 불러오기
 file_dir = input("데이터 파일의 절대 경로를 입력하세요 :")
 df = pd.read_csv(file_dir, encoding='cp949')
-# C:/Users/USER/Documents/LS 빅데이터 스쿨/project2/data_week2.csv
+# C:/Users/USER/Documents/LS 빅데이터 스쿨/rapid_increase_in_electricity_usage/data_week2.csv
 
 # 컬럼명 바꾸기
 df.columns  # ['num', 'date_time', '전력사용량(kWh)', '기온(°C)', '풍속(m/s)', '습도(%)','강수량(mm)', '일조(hr)', '비전기냉방설비운영', '태양광보유']
